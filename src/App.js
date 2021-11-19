@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import SearchBar from './components/SearchBar/SearchBar.js';
+import github_logo from './assets/images/github-logo.png';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <section className="app-title">
+        <img src={github_logo} alt="Github Logo"/>
+        <h1>Github<br/>Profiles</h1>
+      </section>
+      <section className="search-bar">
+        <h2>Search Github Profiles Here!</h2>
+        <SearchBar/>
+      </section>
+    </main>
   );
 }
 
